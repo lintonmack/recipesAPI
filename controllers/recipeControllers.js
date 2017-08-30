@@ -1,5 +1,11 @@
 var Recipe = require('../models/Recipe')
 
 function recipeControllers (app) {
-  module.exports = recipeControllers
+  app.post('/recipes', function (req, res) {
+    res.send({
+      hello: 'world'
+    })
+  })
 }
+
+module.exports = recipeControllers
